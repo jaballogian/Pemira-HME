@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D711E347-F570-4B02-A0F1-5FF1ABEE6F01}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Pemira_HME</RootNamespace>
+    <AssemblyName>Pemira HME</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\..\..\..\Downloads\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DialogKonfirmasiAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogKonfirmasiAdmin.Designer.cs">
+      <DependentUpon>DialogKonfirmasiAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogKonfirmasiHasil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogKonfirmasiHasil.Designer.cs">
+      <DependentUpon>DialogKonfirmasiHasil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogKonfirmasiPemilih.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogKonfirmasiPemilih.Designer.cs">
+      <DependentUpon>DialogKonfirmasiPemilih.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogTerimaKasih.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogTerimaKasih.Designer.cs">
+      <DependentUpon>DialogTerimaKasih.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormKonfirmasiPemilih.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormKonfirmasiPemilih.Designer.cs">
+      <DependentUpon>FormKonfirmasiPemilih.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogTambahDPT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogTambahDPT.Designer.cs">
+      <DependentUpon>DialogTambahDPT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdmin.Designer.cs">
+      <DependentUpon>FormAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLihatDatabase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLihatDatabase.Designer.cs">
+      <DependentUpon>FormLihatDatabase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLihatHasil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLihatHasil.Designer.cs">
+      <DependentUpon>FormLihatHasil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPilihPemimpin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPilihPemimpin.Designer.cs">
+      <DependentUpon>FormPilihPemimpin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPilihTipeUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPilihTipeUser.Designer.cs">
+      <DependentUpon>FormPilihTipeUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="DialogKonfirmasiAdmin.resx">
+      <DependentUpon>DialogKonfirmasiAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogKonfirmasiHasil.resx">
+      <DependentUpon>DialogKonfirmasiHasil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogKonfirmasiPemilih.resx">
+      <DependentUpon>DialogKonfirmasiPemilih.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogTerimaKasih.resx">
+      <DependentUpon>DialogTerimaKasih.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormKonfirmasiPemilih.resx">
+      <DependentUpon>FormKonfirmasiPemilih.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogTambahDPT.resx">
+      <DependentUpon>DialogTambahDPT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAdmin.resx">
+      <DependentUpon>FormAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLihatDatabase.resx">
+      <DependentUpon>FormLihatDatabase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLihatHasil.resx">
+      <DependentUpon>FormLihatHasil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPilihPemimpin.resx">
+      <DependentUpon>FormPilihPemimpin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPilihTipeUser.resx">
+      <DependentUpon>FormPilihTipeUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hme.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\divkom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\red-circle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yellow-cirlce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\green-circle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-back-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info-round-button.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
