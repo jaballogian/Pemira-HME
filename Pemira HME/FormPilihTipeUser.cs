@@ -17,32 +17,7 @@ namespace Pemira_HME
             InitializeComponent();
         }
 
-
-
-        private void masukSebagaiAdminButton_Click(object sender, EventArgs e)
-        {
-            new DialogKonfirmasiAdmin().Show();
-            this.Hide();
-        }
-
-        private void keluarButton_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void tentangButton_Click(object sender, EventArgs e)
-        {
-            new DialogTerimaKasih().Show();
-            this.Hide();
-        }
-
-        private void masukSebagaiPemilihButton_Click(object sender, EventArgs e)
-        {
-            new FormKonfirmasiPemilih().Show();
-            this.Hide();
-        }
-
-
+        
 
         private void groupBox1_Enter_1(object sender, EventArgs e)
         {
@@ -53,6 +28,40 @@ namespace Pemira_HME
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            new Test().Show();
+            this.Hide();
+        }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void masukSebagaiAdminButton_Click_1(object sender, EventArgs e)
+        {
+            new DialogKonfirmasiAdmin().Show();
+            this.Hide();
+        }
+
+        private void masukSebagaiPemilihButton_Click_1(object sender, EventArgs e)
+        {
+            new FormKonfirmasiPemilih().Show();
+            this.Hide();
+        }
+
+        private void tentangButton_Click_1(object sender, EventArgs e)
+        {
+            new DialogTerimaKasih().Show();
+            this.Hide();
+        }
+
+        private void keluarButton_Click_1(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

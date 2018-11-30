@@ -17,19 +17,20 @@ namespace Pemira_HME
             InitializeComponent();
         }
 
-        private void exitButton_Click(object sender, EventArgs e)
-        {
-            this.Close();
-            new FormPilihTipeUser().Show();
-        }
+      
+        
 
-        private void masukButton_Click(object sender, EventArgs e)
+        private void masukButton_Click_1(object sender, EventArgs e)
         {
             new FormPilihTipeUser().Close();
             new FormAdmin().Show();
             this.Close();
-            
-            
+        }
+
+        private void batalButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            new FormPilihTipeUser().Show();
         }
     }
 }

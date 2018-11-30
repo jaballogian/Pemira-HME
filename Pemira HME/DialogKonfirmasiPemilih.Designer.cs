@@ -28,78 +28,160 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.berakhirnyaPemiraHMECheckBox = new System.Windows.Forms.CheckBox();
-            this.exitButton = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.berakhirnyaPemiraHMECheckBox = new System.Windows.Forms.CheckBox();
             this.masukButton = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.exitButton)).BeginInit();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.kembaliButton = new System.Windows.Forms.Button();
+            this.tableLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.tableLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // berakhirnyaPemiraHMECheckBox
+            // tableLayoutPanel1
             // 
-            this.berakhirnyaPemiraHMECheckBox.AutoSize = true;
-            this.berakhirnyaPemiraHMECheckBox.Font = new System.Drawing.Font("Product Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.berakhirnyaPemiraHMECheckBox.Location = new System.Drawing.Point(28, 374);
-            this.berakhirnyaPemiraHMECheckBox.Name = "berakhirnyaPemiraHMECheckBox";
-            this.berakhirnyaPemiraHMECheckBox.Size = new System.Drawing.Size(195, 24);
-            this.berakhirnyaPemiraHMECheckBox.TabIndex = 18;
-            this.berakhirnyaPemiraHMECheckBox.Text = "Ini adalah identitas saya";
-            this.berakhirnyaPemiraHMECheckBox.UseVisualStyleBackColor = true;
+            this.tableLayoutPanel1.ColumnCount = 6;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 2.5F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 75F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 2.5F));
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox2, 4, 1);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox1, 3, 1);
+            this.tableLayoutPanel1.Controls.Add(this.berakhirnyaPemiraHMECheckBox, 2, 6);
+            this.tableLayoutPanel1.Controls.Add(this.label1, 2, 2);
+            this.tableLayoutPanel1.Controls.Add(this.label2, 2, 4);
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 2, 8);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 11;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 2.5F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.5F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1024, 768);
+            this.tableLayoutPanel1.TabIndex = 3;
             // 
-            // exitButton
+            // pictureBox2
             // 
-            this.exitButton.BackgroundImage = global::Pemira_HME.Properties.Resources.red_circle;
-            this.exitButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.exitButton.Location = new System.Drawing.Point(398, 18);
-            this.exitButton.Name = "exitButton";
-            this.exitButton.Size = new System.Drawing.Size(30, 30);
-            this.exitButton.TabIndex = 17;
-            this.exitButton.TabStop = false;
-            this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
+            this.pictureBox2.BackgroundImage = global::Pemira_HME.Properties.Resources.hme;
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox2.Location = new System.Drawing.Point(949, 22);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(45, 70);
+            this.pictureBox2.TabIndex = 15;
+            this.pictureBox2.TabStop = false;
             // 
-            // label2
+            // pictureBox1
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Product Sans", 20F);
-            this.label2.Location = new System.Drawing.Point(123, 239);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(62, 34);
-            this.label2.TabIndex = 16;
-            this.label2.Text = "NIM";
+            this.pictureBox1.BackgroundImage = global::Pemira_HME.Properties.Resources.divkom;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Location = new System.Drawing.Point(898, 22);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(45, 70);
+            this.pictureBox1.TabIndex = 16;
+            this.pictureBox1.TabStop = false;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label1.Font = new System.Drawing.Font("Product Sans", 20F);
-            this.label1.Location = new System.Drawing.Point(107, 74);
+            this.label1.Location = new System.Drawing.Point(130, 95);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(85, 34);
-            this.label1.TabIndex = 15;
+            this.label1.Size = new System.Drawing.Size(762, 76);
+            this.label1.TabIndex = 21;
             this.label1.Text = "Nama";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label2.Font = new System.Drawing.Font("Product Sans", 20F);
+            this.label2.Location = new System.Drawing.Point(130, 247);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(762, 76);
+            this.label2.TabIndex = 22;
+            this.label2.Text = "NIM";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // berakhirnyaPemiraHMECheckBox
+            // 
+            this.berakhirnyaPemiraHMECheckBox.AutoSize = true;
+            this.berakhirnyaPemiraHMECheckBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.berakhirnyaPemiraHMECheckBox.Font = new System.Drawing.Font("Product Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.berakhirnyaPemiraHMECheckBox.Location = new System.Drawing.Point(130, 402);
+            this.berakhirnyaPemiraHMECheckBox.Name = "berakhirnyaPemiraHMECheckBox";
+            this.berakhirnyaPemiraHMECheckBox.Size = new System.Drawing.Size(762, 70);
+            this.berakhirnyaPemiraHMECheckBox.TabIndex = 24;
+            this.berakhirnyaPemiraHMECheckBox.Text = "Ini adalah identitas saya";
+            this.berakhirnyaPemiraHMECheckBox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.berakhirnyaPemiraHMECheckBox.UseVisualStyleBackColor = true;
             // 
             // masukButton
             // 
+            this.masukButton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.masukButton.FlatAppearance.BorderSize = 0;
             this.masukButton.Font = new System.Drawing.Font("Product Sans", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.masukButton.Location = new System.Drawing.Point(113, 419);
+            this.masukButton.Location = new System.Drawing.Point(384, 3);
             this.masukButton.Name = "masukButton";
-            this.masukButton.Size = new System.Drawing.Size(238, 63);
-            this.masukButton.TabIndex = 14;
+            this.masukButton.Size = new System.Drawing.Size(375, 64);
+            this.masukButton.TabIndex = 25;
             this.masukButton.Text = "Masuk";
             this.masukButton.UseVisualStyleBackColor = true;
-            this.masukButton.Click += new System.EventHandler(this.masukButton_Click);
+            this.masukButton.Click += new System.EventHandler(this.masukButton_Click_1);
+            // 
+            // tableLayoutPanel2
+            // 
+            this.tableLayoutPanel2.ColumnCount = 2;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.Controls.Add(this.kembaliButton, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.masukButton, 1, 0);
+            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(130, 554);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 1;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(762, 70);
+            this.tableLayoutPanel2.TabIndex = 26;
+            // 
+            // kembaliButton
+            // 
+            this.kembaliButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.kembaliButton.FlatAppearance.BorderSize = 0;
+            this.kembaliButton.Font = new System.Drawing.Font("Product Sans", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kembaliButton.Location = new System.Drawing.Point(3, 3);
+            this.kembaliButton.Name = "kembaliButton";
+            this.kembaliButton.Size = new System.Drawing.Size(375, 64);
+            this.kembaliButton.TabIndex = 26;
+            this.kembaliButton.Text = "Kembali";
+            this.kembaliButton.UseVisualStyleBackColor = true;
+            this.kembaliButton.Click += new System.EventHandler(this.kembaliButton_Click);
             // 
             // DialogKonfirmasiPemilih
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1024, 768);
-            this.Controls.Add(this.berakhirnyaPemiraHMECheckBox);
-            this.Controls.Add(this.exitButton);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.masukButton);
+            this.Controls.Add(this.tableLayoutPanel1);
             this.Font = new System.Drawing.Font("Product Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -108,18 +190,25 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DialogKonfirmasiPemilih";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            ((System.ComponentModel.ISupportInitialize)(this.exitButton)).EndInit();
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.tableLayoutPanel2.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.CheckBox berakhirnyaPemiraHMECheckBox;
-        private System.Windows.Forms.PictureBox exitButton;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.CheckBox berakhirnyaPemiraHMECheckBox;
         private System.Windows.Forms.Button masukButton;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        private System.Windows.Forms.Button kembaliButton;
     }
 }

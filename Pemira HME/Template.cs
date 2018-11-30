@@ -10,25 +10,16 @@ using System.Windows.Forms;
 
 namespace Pemira_HME
 {
-    public partial class DialogTambahDPT : Form
+    public partial class Template : Form
     {
-        public DialogTambahDPT()
+        public Template()
         {
             InitializeComponent();
         }
 
-       
-
-        private void tambahButton_Click_1(object sender, EventArgs e)
-        {
-            new FormAdmin().Show();
-            this.Close();
-        }
-
         private void kembaliButton_Click(object sender, EventArgs e)
         {
-            this.Close();
-            new FormAdmin().Show();
+
         }
     }
 }

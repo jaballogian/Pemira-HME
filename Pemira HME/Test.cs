@@ -10,19 +10,11 @@ using System.Windows.Forms;
 
 namespace Pemira_HME
 {
-    public partial class DialogTerimaKasih : Form
+    public partial class Test : Form
     {
-        public DialogTerimaKasih()
+        public Test()
         {
             InitializeComponent();
-        }
-
-        
-
-        private void selesaiButton_Click_1(object sender, EventArgs e)
-        {
-            new FormKonfirmasiPemilih().Show();
-            this.Close();
         }
     }
 }

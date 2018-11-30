@@ -22,10 +22,17 @@ namespace Pemira_HME
             this.Close();
         }
 
-        private void masukButton_Click(object sender, EventArgs e)
+       
+        private void masukButton_Click_1(object sender, EventArgs e)
         {
             new DialogKonfirmasiPemilih().Show();
             this.Close();
+        }
+
+        private void kembaliButton_Click(object sender, EventArgs e)
+        {
+            new FormPilihTipeUser().Show();
+            this.Hide();
         }
     }
 }

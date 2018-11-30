@@ -23,13 +23,18 @@ namespace Pemira_HME
             new FormAdmin().Show();
         }
 
-        private void lihatButton_Click(object sender, EventArgs e)
+        
+        private void lihatButton_Click_1(object sender, EventArgs e)
         {
             new FormAdmin().Close();
             new FormLihatHasil().Show();
             this.Close();
-            
-            
+        }
+
+        private void kembaliButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            new FormAdmin().Show();
         }
     }
 }

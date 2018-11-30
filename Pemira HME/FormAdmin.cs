@@ -17,23 +17,29 @@ namespace Pemira_HME
             InitializeComponent();
         }
 
-        private void tambahDPTBUtton_Click(object sender, EventArgs e)
+        
+        
+        private void tambahDPTBUtton_Click_1(object sender, EventArgs e)
         {
             new DialogTambahDPT().Show();
             this.Close();
-        
         }
 
-        private void lihatDatabaseButton_Click(object sender, EventArgs e)
+        private void lihatDatabaseButton_Click_1(object sender, EventArgs e)
         {
             new FormLihatDatabase().Show();
             this.Close();
-           
         }
 
-        private void lihatHasilPemiluButton_Click(object sender, EventArgs e)
+        private void lihatHasilPemiluButton_Click_1(object sender, EventArgs e)
         {
             new DialogKonfirmasiHasil().Show();
+            this.Close();
+        }
+
+        private void kembaliButton_Click(object sender, EventArgs e)
+        {
+            new FormPilihTipeUser().Show();
             this.Close();
         }
     }

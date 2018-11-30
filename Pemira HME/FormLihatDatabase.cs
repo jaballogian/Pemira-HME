@@ -17,11 +17,11 @@ namespace Pemira_HME
             InitializeComponent();
         }
 
-        private void kembaliButton_Click(object sender, EventArgs e)
+        
+        private void kembaliButton_Click_1(object sender, EventArgs e)
         {
             new FormAdmin().Show();
             this.Close();
-            
         }
     }
 }

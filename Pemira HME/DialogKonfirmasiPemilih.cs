@@ -23,12 +23,19 @@ namespace Pemira_HME
             new FormKonfirmasiPemilih().Show();
         }
 
-        private void masukButton_Click(object sender, EventArgs e)
+        
+
+        private void masukButton_Click_1(object sender, EventArgs e)
         {
             new FormKonfirmasiPemilih().Close();
             new FormPilihPemimpin().Show();
             this.Close();
-            
+        }
+
+        private void kembaliButton_Click(object sender, EventArgs e)
+        {
+            new FormKonfirmasiPemilih().Show();
+            this.Close();
         }
     }
 }
