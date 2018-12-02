@@ -24,5 +24,20 @@ namespace Pemira_HME
             new FormKonfirmasiPemilih().Show();
             this.Close();
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void selesaiButton_MouseHover(object sender, EventArgs e)
+        {
+            this.selesaiButton.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.selesai_blue));
+        }
+
+        private void selesaiButton_MouseLeave(object sender, EventArgs e)
+        {
+            this.selesaiButton.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.selesai));
+        }
     }
 }

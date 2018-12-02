@@ -16,21 +16,48 @@ namespace Pemira_HME
         {
             InitializeComponent();
         }
-
-      
         
-
         private void masukButton_Click_1(object sender, EventArgs e)
         {
-            new FormPilihTipeUser().Close();
-            new FormAdmin().Show();
-            this.Close();
+
+            if (usernameTextBox.Text == "admin" && passwordTextBox.Text == "admin")
+            {
+
+                new FormAdmin().Show();
+                this.Close();
+            }
+            else {
+
+                checkLabel.Text = "Mohon maaf username dan password salah";
+            }           
+            
         }
 
         private void batalButton_Click(object sender, EventArgs e)
         {
-            this.Close();
             new FormPilihTipeUser().Show();
+            this.Close();
+            
+        }
+
+        private void batalButton_MouseHover(object sender, EventArgs e)
+        {
+            this.batalButton.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.kembali_blue));
+        }
+
+        private void batalButton_MouseLeave(object sender, EventArgs e)
+        {
+            this.batalButton.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.kembali));
+        }
+
+        private void masukButton_MouseHover(object sender, EventArgs e)
+        {
+            this.masukButton.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.masuk_blue));
+        }
+
+        private void masukButton_MouseLeave(object sender, EventArgs e)
+        {
+            this.masukButton.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.masuk));
         }
     }
 }

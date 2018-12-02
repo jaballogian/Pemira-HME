@@ -42,5 +42,45 @@ namespace Pemira_HME
             new FormPilihTipeUser().Show();
             this.Close();
         }
+
+        private void tambahDPTBUtton_MouseHover(object sender, EventArgs e)
+        {
+            this.tambahDPTBUtton.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.tambah_dpt_blue));
+        }
+
+        private void tambahDPTBUtton_MouseLeave(object sender, EventArgs e)
+        {
+            this.tambahDPTBUtton.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.tambah_dpt));
+        }
+
+        private void lihatDatabaseButton_MouseHover(object sender, EventArgs e)
+        {
+            this.lihatDatabaseButton.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.lihat_database_blue));
+        }
+
+        private void lihatDatabaseButton_MouseLeave(object sender, EventArgs e)
+        {
+            this.lihatDatabaseButton.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.lihat_database));
+        }
+
+        private void lihatHasilPemiluButton_MouseHover(object sender, EventArgs e)
+        {
+            this.lihatHasilPemiluButton.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.lihat_hasil_blue));
+        }
+
+        private void lihatHasilPemiluButton_MouseLeave(object sender, EventArgs e)
+        {
+            this.lihatHasilPemiluButton.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.lihat_hasil));
+        }
+
+        private void kembaliButton_MouseHover(object sender, EventArgs e)
+        {
+            this.kembaliButton.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.kembali_besar_blue));
+        }
+
+        private void kembaliButton_MouseLeave(object sender, EventArgs e)
+        {
+            this.kembaliButton.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.kembali_besar));
+        }
     }
 }

@@ -28,17 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormKonfirmasiPemilih));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.usernameTextBox = new System.Windows.Forms.TextBox();
             this.passwordTextBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.kembaliButton = new System.Windows.Forms.Button();
             this.masukButton = new System.Windows.Forms.Button();
+            this.nimTextBox = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.checkLabel = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -47,6 +49,7 @@
             // 
             // tableLayoutPanel1
             // 
+            this.tableLayoutPanel1.BackColor = System.Drawing.Color.White;
             this.tableLayoutPanel1.ColumnCount = 6;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 2.5F));
@@ -59,9 +62,10 @@
             this.tableLayoutPanel1.Controls.Add(this.passwordTextBox, 2, 6);
             this.tableLayoutPanel1.Controls.Add(this.label2, 2, 5);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 2, 8);
-            this.tableLayoutPanel1.Controls.Add(this.usernameTextBox, 2, 4);
+            this.tableLayoutPanel1.Controls.Add(this.nimTextBox, 2, 4);
             this.tableLayoutPanel1.Controls.Add(this.label1, 2, 3);
             this.tableLayoutPanel1.Controls.Add(this.label3, 2, 2);
+            this.tableLayoutPanel1.Controls.Add(this.checkLabel, 2, 7);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -102,27 +106,6 @@
             this.pictureBox1.TabIndex = 16;
             this.pictureBox1.TabStop = false;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Font = new System.Drawing.Font("Product Sans", 20F);
-            this.label1.Location = new System.Drawing.Point(130, 171);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(762, 76);
-            this.label1.TabIndex = 17;
-            this.label1.Text = "NIM";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // usernameTextBox
-            // 
-            this.usernameTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.usernameTextBox.Font = new System.Drawing.Font("Product Sans", 20F);
-            this.usernameTextBox.Location = new System.Drawing.Point(130, 250);
-            this.usernameTextBox.Name = "usernameTextBox";
-            this.usernameTextBox.Size = new System.Drawing.Size(762, 40);
-            this.usernameTextBox.TabIndex = 18;
-            // 
             // passwordTextBox
             // 
             this.passwordTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -131,6 +114,8 @@
             this.passwordTextBox.Name = "passwordTextBox";
             this.passwordTextBox.Size = new System.Drawing.Size(762, 40);
             this.passwordTextBox.TabIndex = 20;
+            this.passwordTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.passwordTextBox.UseSystemPasswordChar = true;
             // 
             // label2
             // 
@@ -161,6 +146,8 @@
             // 
             // kembaliButton
             // 
+            this.kembaliButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("kembaliButton.BackgroundImage")));
+            this.kembaliButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.kembaliButton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kembaliButton.FlatAppearance.BorderSize = 0;
             this.kembaliButton.Font = new System.Drawing.Font("Product Sans", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -168,12 +155,15 @@
             this.kembaliButton.Name = "kembaliButton";
             this.kembaliButton.Size = new System.Drawing.Size(375, 64);
             this.kembaliButton.TabIndex = 22;
-            this.kembaliButton.Text = "Kembali";
             this.kembaliButton.UseVisualStyleBackColor = true;
             this.kembaliButton.Click += new System.EventHandler(this.kembaliButton_Click);
+            this.kembaliButton.MouseLeave += new System.EventHandler(this.kembaliButton_MouseLeave);
+            this.kembaliButton.MouseHover += new System.EventHandler(this.kembaliButton_MouseHover);
             // 
             // masukButton
             // 
+            this.masukButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("masukButton.BackgroundImage")));
+            this.masukButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.masukButton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.masukButton.FlatAppearance.BorderSize = 0;
             this.masukButton.Font = new System.Drawing.Font("Product Sans", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -181,9 +171,32 @@
             this.masukButton.Name = "masukButton";
             this.masukButton.Size = new System.Drawing.Size(375, 64);
             this.masukButton.TabIndex = 21;
-            this.masukButton.Text = "Masuk";
             this.masukButton.UseVisualStyleBackColor = true;
             this.masukButton.Click += new System.EventHandler(this.masukButton_Click_1);
+            this.masukButton.MouseLeave += new System.EventHandler(this.masukButton_MouseLeave);
+            this.masukButton.MouseHover += new System.EventHandler(this.masukButton_MouseHover);
+            // 
+            // nimTextBox
+            // 
+            this.nimTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.nimTextBox.Font = new System.Drawing.Font("Product Sans", 20F);
+            this.nimTextBox.Location = new System.Drawing.Point(130, 250);
+            this.nimTextBox.Name = "nimTextBox";
+            this.nimTextBox.Size = new System.Drawing.Size(762, 40);
+            this.nimTextBox.TabIndex = 18;
+            this.nimTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label1.Font = new System.Drawing.Font("Product Sans", 20F);
+            this.label1.Location = new System.Drawing.Point(130, 171);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(762, 76);
+            this.label1.TabIndex = 17;
+            this.label1.Text = "NIM";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label3
             // 
@@ -194,8 +207,20 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(762, 76);
             this.label3.TabIndex = 23;
-            this.label3.Text = "Masukan NIM dan Password Anda sebagai Pemilih";
+            this.label3.Text = "MASUKAN NIM DAN PASSWORD ANDA";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // checkLabel
+            // 
+            this.checkLabel.AutoSize = true;
+            this.checkLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.checkLabel.Font = new System.Drawing.Font("Product Sans", 20F);
+            this.checkLabel.ForeColor = System.Drawing.Color.Red;
+            this.checkLabel.Location = new System.Drawing.Point(130, 475);
+            this.checkLabel.Name = "checkLabel";
+            this.checkLabel.Size = new System.Drawing.Size(762, 76);
+            this.checkLabel.TabIndex = 24;
+            this.checkLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // FormKonfirmasiPemilih
             // 
@@ -209,7 +234,7 @@
             this.MinimumSize = new System.Drawing.Size(1024, 768);
             this.Name = "FormKonfirmasiPemilih";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "DialogKonfirmasiPemilih";
+            this.Text = "PEMIRA HME";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
@@ -226,12 +251,13 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox usernameTextBox;
+        private System.Windows.Forms.TextBox nimTextBox;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox passwordTextBox;
         private System.Windows.Forms.Button masukButton;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.Button kembaliButton;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label checkLabel;
     }
 }

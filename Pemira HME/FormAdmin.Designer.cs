@@ -33,9 +33,9 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tambahDPTBUtton = new System.Windows.Forms.Button();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.kembaliButton = new System.Windows.Forms.Button();
             this.lihatDatabaseButton = new System.Windows.Forms.Button();
             this.lihatHasilPemiluButton = new System.Windows.Forms.Button();
-            this.kembaliButton = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -44,6 +44,7 @@
             // 
             // tableLayoutPanel1
             // 
+            this.tableLayoutPanel1.BackColor = System.Drawing.Color.White;
             this.tableLayoutPanel1.ColumnCount = 6;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 38.75F));
@@ -90,6 +91,8 @@
             // 
             // tambahDPTBUtton
             // 
+            this.tambahDPTBUtton.BackgroundImage = global::Pemira_HME.Properties.Resources.tambah_dpt;
+            this.tambahDPTBUtton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tambahDPTBUtton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tambahDPTBUtton.FlatAppearance.BorderSize = 0;
             this.tambahDPTBUtton.Font = new System.Drawing.Font("Product Sans", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -97,9 +100,10 @@
             this.tambahDPTBUtton.Name = "tambahDPTBUtton";
             this.tambahDPTBUtton.Size = new System.Drawing.Size(390, 589);
             this.tambahDPTBUtton.TabIndex = 17;
-            this.tambahDPTBUtton.Text = "TAMBAH DPT";
             this.tambahDPTBUtton.UseVisualStyleBackColor = true;
             this.tambahDPTBUtton.Click += new System.EventHandler(this.tambahDPTBUtton_Click_1);
+            this.tambahDPTBUtton.MouseLeave += new System.EventHandler(this.tambahDPTBUtton_MouseLeave);
+            this.tambahDPTBUtton.MouseHover += new System.EventHandler(this.tambahDPTBUtton_MouseHover);
             // 
             // tableLayoutPanel2
             // 
@@ -120,34 +124,10 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(390, 589);
             this.tableLayoutPanel2.TabIndex = 18;
             // 
-            // lihatDatabaseButton
-            // 
-            this.lihatDatabaseButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lihatDatabaseButton.FlatAppearance.BorderSize = 0;
-            this.lihatDatabaseButton.Font = new System.Drawing.Font("Product Sans", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lihatDatabaseButton.Location = new System.Drawing.Point(3, 3);
-            this.lihatDatabaseButton.Name = "lihatDatabaseButton";
-            this.lihatDatabaseButton.Size = new System.Drawing.Size(384, 229);
-            this.lihatDatabaseButton.TabIndex = 14;
-            this.lihatDatabaseButton.Text = "LIHAT DATABASE";
-            this.lihatDatabaseButton.UseVisualStyleBackColor = true;
-            this.lihatDatabaseButton.Click += new System.EventHandler(this.lihatDatabaseButton_Click_1);
-            // 
-            // lihatHasilPemiluButton
-            // 
-            this.lihatHasilPemiluButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lihatHasilPemiluButton.FlatAppearance.BorderSize = 0;
-            this.lihatHasilPemiluButton.Font = new System.Drawing.Font("Product Sans", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lihatHasilPemiluButton.Location = new System.Drawing.Point(3, 238);
-            this.lihatHasilPemiluButton.Name = "lihatHasilPemiluButton";
-            this.lihatHasilPemiluButton.Size = new System.Drawing.Size(384, 229);
-            this.lihatHasilPemiluButton.TabIndex = 15;
-            this.lihatHasilPemiluButton.Text = "LIHAT HASIL PEMILU";
-            this.lihatHasilPemiluButton.UseVisualStyleBackColor = true;
-            this.lihatHasilPemiluButton.Click += new System.EventHandler(this.lihatHasilPemiluButton_Click_1);
-            // 
             // kembaliButton
             // 
+            this.kembaliButton.BackgroundImage = global::Pemira_HME.Properties.Resources.kembali_besar;
+            this.kembaliButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.kembaliButton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kembaliButton.FlatAppearance.BorderSize = 0;
             this.kembaliButton.Font = new System.Drawing.Font("Product Sans", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -155,9 +135,42 @@
             this.kembaliButton.Name = "kembaliButton";
             this.kembaliButton.Size = new System.Drawing.Size(384, 113);
             this.kembaliButton.TabIndex = 16;
-            this.kembaliButton.Text = "KEMBALI";
             this.kembaliButton.UseVisualStyleBackColor = true;
             this.kembaliButton.Click += new System.EventHandler(this.kembaliButton_Click);
+            this.kembaliButton.MouseLeave += new System.EventHandler(this.kembaliButton_MouseLeave);
+            this.kembaliButton.MouseHover += new System.EventHandler(this.kembaliButton_MouseHover);
+            // 
+            // lihatDatabaseButton
+            // 
+            this.lihatDatabaseButton.BackgroundImage = global::Pemira_HME.Properties.Resources.lihat_database;
+            this.lihatDatabaseButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.lihatDatabaseButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lihatDatabaseButton.FlatAppearance.BorderSize = 0;
+            this.lihatDatabaseButton.Font = new System.Drawing.Font("Product Sans", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lihatDatabaseButton.Location = new System.Drawing.Point(3, 3);
+            this.lihatDatabaseButton.Name = "lihatDatabaseButton";
+            this.lihatDatabaseButton.Size = new System.Drawing.Size(384, 229);
+            this.lihatDatabaseButton.TabIndex = 14;
+            this.lihatDatabaseButton.UseVisualStyleBackColor = true;
+            this.lihatDatabaseButton.Click += new System.EventHandler(this.lihatDatabaseButton_Click_1);
+            this.lihatDatabaseButton.MouseLeave += new System.EventHandler(this.lihatDatabaseButton_MouseLeave);
+            this.lihatDatabaseButton.MouseHover += new System.EventHandler(this.lihatDatabaseButton_MouseHover);
+            // 
+            // lihatHasilPemiluButton
+            // 
+            this.lihatHasilPemiluButton.BackgroundImage = global::Pemira_HME.Properties.Resources.lihat_hasil;
+            this.lihatHasilPemiluButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.lihatHasilPemiluButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lihatHasilPemiluButton.FlatAppearance.BorderSize = 0;
+            this.lihatHasilPemiluButton.Font = new System.Drawing.Font("Product Sans", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lihatHasilPemiluButton.Location = new System.Drawing.Point(3, 238);
+            this.lihatHasilPemiluButton.Name = "lihatHasilPemiluButton";
+            this.lihatHasilPemiluButton.Size = new System.Drawing.Size(384, 229);
+            this.lihatHasilPemiluButton.TabIndex = 15;
+            this.lihatHasilPemiluButton.UseVisualStyleBackColor = true;
+            this.lihatHasilPemiluButton.Click += new System.EventHandler(this.lihatHasilPemiluButton_Click_1);
+            this.lihatHasilPemiluButton.MouseLeave += new System.EventHandler(this.lihatHasilPemiluButton_MouseLeave);
+            this.lihatHasilPemiluButton.MouseHover += new System.EventHandler(this.lihatHasilPemiluButton_MouseHover);
             // 
             // FormAdmin
             // 
@@ -171,7 +184,7 @@
             this.MinimumSize = new System.Drawing.Size(1024, 768);
             this.Name = "FormAdmin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormAdmin";
+            this.Text = "PEMIRA HME";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.tableLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
